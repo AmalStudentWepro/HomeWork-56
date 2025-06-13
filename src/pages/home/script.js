@@ -2,12 +2,12 @@ import { render } from "../../utils/render.js";
 import { Header } from "../../components/header.js";
 import axios from "axios";
 
-const app = document.querySelector("#app2"); // или другой контейнер
-app.prepend(Header()); // добавляем в DOM
+const app = document.querySelector("#app2");
+app.prepend(Header()); 
 
 
 
-// header(); 
+
 
 axios
   .get("http://localhost:3000/posts")
